@@ -27,3 +27,14 @@ public class Utility {
         }
 	}
 }
+//Perfect Number
+private static int perfectNumber(int num) {
+        int i = 1;
+        int sum = 0;
+        for (i=1; i<num/2; i++) {
+            if (num % i == 0) {
+                sum = sum + i;
+            }
+        }
+        return sum;
+    }
